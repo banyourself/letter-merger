@@ -1,0 +1,13 @@
+*.cs text eol=lf
+*.csproj text eol=lf
+*.manifest text eol=lf
+*.ps1 text eol=crlf
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.docx binary
+*.exe binary
+*.png binary
+/LICENSE text eol=lf
+/NOTICE text eol=lf
