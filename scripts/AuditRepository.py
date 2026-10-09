@@ -24,7 +24,7 @@ ALLOWED = {
 }
 REVIEWED_BINARY = 'adfa65f6e1b147f81b486f3efe293423e0ce4bef11d5fd7a5ff1f685213b368c'
 REVIEWED_TEMPLATE = '81690f6657562a3d61f36d5ba050fdf135fa5a15096160d1f8c4e7f259a0809a'
-REVIEWED_LICENSE = '3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986'
+REVIEWED_LICENSE = '5c2ef1118adabe870bc5130da62c50748fadbc13508872c3168814e4136f6314'
 REVIEWED_IMAGES = {
     'docs/images/main-window.png': 'cbbac4a4bf8fcda1e71030ae279e1ebb13a9d1d4365c7b955a4b59bc8635e40e',
     'docs/images/photo-preview.png': '7b3409882c3bd311cd81827f5af5ce8aa26c813a7b083e34ac25721596feafd8'
@@ -147,9 +147,9 @@ def audit_files(files):
         else:
             audit_text(path, content)
         if path == 'LICENSE' and hashlib.sha256(content).hexdigest() != REVIEWED_LICENSE:
-            fail(path, 'GPL version 3 license text differs from the reviewed full license')
-        if path == 'NOTICE' and b'SPDX-License-Identifier: GPL-3.0-only' not in content.splitlines():
-            fail(path, 'the GPL-3.0-only project license notice is missing')
+            fail(path, 'license text differs from the reviewed PolyForm Noncommercial 1.0.0 text')
+        if path == 'NOTICE' and b'SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0' not in content.splitlines():
+            fail(path, 'the PolyForm-Noncommercial-1.0.0 project license notice is missing')
 
 
 def main():

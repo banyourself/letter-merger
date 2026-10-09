@@ -1,37 +1,34 @@
 Letter Merger
 Copyright (C) 2026 Kevin Le
 Project founder and developer: Kevin Le
-SPDX-License-Identifier: GPL-3.0-only
+SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 
 The original software in src/, its compiled Runtime executable, scripts/,
-tests/, and accompanying software documentation are licensed under version 3
-only of the GNU General Public License. The full license is in LICENSE.
+tests/, and accompanying software documentation are licensed under the
+PolyForm Noncommercial License 1.0.0. The full license is in LICENSE.
 
-This program is free software: you may redistribute it and modify it under
-the terms of version 3 of the GNU General Public License as published by
-the Free Software Foundation.
+You may use, copy, and change the software only for noncommercial purposes
+as the license defines them, which include use by schools, charities, and
+government bodies. Commercial use needs written permission from Kevin Le.
+The software is provided without warranty or liability; see LICENSE for
+the full terms.
 
-This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-FITNESS FOR A PARTICULAR PURPOSE. See LICENSE for the full terms.
-
-Keep this notice and LICENSE with copies of the software. The corresponding
-source and build scripts are provided in this same repository. When conveying
-modified versions, retain attribution, identify your changes, and satisfy
-the applicable GPL-3.0 source-distribution requirements.
+Keep this notice, LICENSE, and its "Required Notice" line with every copy
+of the software, including changed copies. Letter Merger is a trademark of
+Kevin Le, and the license does not grant any right to use that name.
 
 Runtime/Templates/A7_Card_Template.docx, including its frame artwork, is
 part of this project. Kevin Le drew the frame for this edition, and the
-template is licensed with the software under GPL-3.0-only. Third-party
+template is licensed with the software under the same license. Third-party
 names and marks remain subject to their respective rights; no trademark
 permission or endorsement is granted by this software license.
 
 Student records, photographs, scholarship data, thank-you messages, generated
 letters, and run reports are user content. They are not included in this
-repository or automatically licensed under the software GPL grant. Staff
-must obtain the institution's authorization for their use and disclosure.
+repository or licensed under the software license grant. Staff must obtain
+the institution's authorization for their use and disclosure.
 
-The software originated during Kevin Le's employment as a Student Assistant
-in a college foundation office. This notice does not determine or transfer
-employer-owned or third-party rights. The foundation office approved publishing
-the software under this license.
+Kevin Le wrote this software on his own, at home, to make his work as a
+Student Assistant in a college foundation office easier. The foundation
+office approved publishing it. Versions published before October 9, 2026
+were licensed under GPL-3.0-only and keep that license.

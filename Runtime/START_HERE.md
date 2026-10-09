@@ -10,4 +10,4 @@ Version 16.1.0.0. Requires Windows with .NET Framework 4.8. Desktop Microsoft Wo
 
 Keep real records and everything the program creates in storage your institution approves. The full [README](../README.md), [privacy guidance](../docs/PRIVACY.md), and [security notes](../SECURITY.md) are in the extracted folder.
 
-Licensed under GPL-3.0-only and provided without warranty. Keep `LICENSE` and `NOTICE` with the program. The source code is in `src`.
+Licensed under the PolyForm Noncommercial License 1.0.0 (noncommercial use only) and provided without warranty. Keep `LICENSE` and `NOTICE` with the program. The source code is in `src`.

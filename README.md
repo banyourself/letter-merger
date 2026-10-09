@@ -2,9 +2,9 @@
 
 Letter Merger is a Windows desktop app that turns a scholarship CSV export and a folder of student photos into Microsoft Word A7 donor thank-you cards. Each card gets the student's name, scholarship, complete thank-you message, and photo inside the card's original frame and above its fold line, and the app checks every finished card against its CSV row before the document is saved under its final name.
 
-- **Who it is for:** staff in a scholarship or foundation office who send student thank-you cards to donors. I built it while working as a Student Assistant in a college foundation office.
+- **Who it is for:** staff in a scholarship or foundation office who send student thank-you cards to donors. I built it on my own, at home, to make my work as a Student Assistant in a college foundation office easier.
 - **Built with:** C# 5 on .NET Framework 4.8 and Windows Forms, Open XML written directly through `System.IO.Compression` and `System.Xml` (no Office SDK and no NuGet packages), optional Word automation over COM, and a Python repository audit. About 3,900 lines of C# in the application and 990 in the tests.
-- **Status:** version 16.1.0.0, licensed GPL-3.0-only. All 62 core checks and the UI suite passed against the released executable on October 9, 2026, and the executable rebuilds byte for byte from this source.
+- **Status:** version 16.1.0.0, licensed under the PolyForm Noncommercial License 1.0.0. All 62 core checks and the UI suite passed against the released executable on October 9, 2026, and the executable rebuilds byte for byte from this source.
 
 ![Letter Merger main window with a made-up CSV loaded and its four columns mapped](docs/images/main-window.png)
 
@@ -113,7 +113,7 @@ The repository is set up so that real student data cannot be committed by accide
 
 - **Default-deny `.gitignore`.** The file starts with `*`, re-allows folders with `!*/`, and then allows each published file by its exact path. A stray CSV, photo, letter, or settings file stays ignored no matter where it lands.
 - **Pinned file inventory.** [`scripts/AuditRepository.py`](scripts/AuditRepository.py) requires the set of files to equal its reviewed list exactly. It runs against the working copy, the staged index, and the latest commit, including the commit message.
-- **Pinned hashes.** The audit compares SHA-256 hashes of the executable, the blank template, the GPL text, and the README screenshots with reviewed values, so a binary cannot change without a deliberate review.
+- **Pinned hashes.** The audit compares SHA-256 hashes of the executable, the blank template, the license text, and the README screenshots with reviewed values, so a binary cannot change without a deliberate review.
 - **Content checks.** It scans text files for private keys, common cloud and API token formats, JWTs, Social Security number patterns, workstation paths, and credential-bearing URLs. It also checks for code comments in C#, PowerShell, Python, and XML, for em dashes, and for author or history metadata left in the template.
 - **Reproducible executable.** The project builds deterministically with no NuGet dependencies, warnings treated as errors, and C# 5. On October 9, 2026, I rebuilt `Runtime/LetterMerger.exe` from this source with the Roslyn 4.8.0 compiler and the .NET Framework 4.8 reference assemblies, and the output matched the released file byte for byte. The command is under [Reproduce the released executable](#reproduce-the-released-executable).
 - **Clean history.** Every commit uses my GitHub no-reply address.
@@ -214,6 +214,7 @@ Dates are in Pacific time. This public repository starts from a single commit of
 | 2026-10-06 | | Clarified the edition versions, and `START_HERE.md` now links the full docs and names the compiled version. |
 | 2026-10-08 | | Rewrote the documentation in first person and removed release review files that were no longer needed. |
 | 2026-10-08 | 16.1.0.0 | Added an original frame I drew, with its own SHA-256 pin, and renamed the bookmarks from `CCF_` to `LM_`. Report cells that start with a tab or carriage return are now escaped, and temporary names are shorter for the 260-character path limit. |
+| 2026-10-09 | | Moved to the PolyForm Noncommercial License 1.0.0 and added a trademark notice for the Letter Merger name. |
 
 ## Using it
 
@@ -353,6 +354,10 @@ Please do not open a public issue for a security problem, and never attach real 
 
 ## License
 
-Copyright (C) 2026 Kevin Le. The software is licensed under the GNU General Public License version 3 only (`GPL-3.0-only`). See [LICENSE](LICENSE) and [NOTICE](NOTICE). The license also covers the card template and its frame, which I drew for this project. It does not cover anyone's student data.
+Copyright (C) 2026 Kevin Le. Letter Merger is source-available under the [PolyForm Noncommercial License 1.0.0](LICENSE). You can read, run, study, and change it for any noncommercial purpose, including personal use and use by schools, charities, and government bodies. Commercial use, such as selling it or building it into a paid product, needs my written permission. Any copy you share has to include [LICENSE](LICENSE), [NOTICE](NOTICE), and the line `Required Notice: Copyright (C) 2026 Kevin Le`. The license also covers the card template and its frame, which I drew for this project. It does not cover anyone's student data. Earlier versions keep the license that shipped with them (GPL-3.0-only).
+
+## Trademark
+
+Letter Merger™ is a trademark of Kevin Le. The license covers the code, not the name: a copy or a changed version you share has to use a different name and must not suggest that I made or endorse it.
 
 Built by Kevin Le ([@banyourself](https://github.com/banyourself)).
